@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+  html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    background: #333;
+    background-size: cover;
+    height: 100vh;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 53%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: normal;
+    padding: 15px 20px;
+    background-color: #358fef;
+    box-shadow: 0px 3px 6px #42424299;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid 3px #fbb110;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit; 
+}
+
+.container {
+    margin: 80px auto;
+    width: 90%;
+    max-width: 800px;
+    float:right;
+}
+
+.registration {
+    background-color: #fffffff5;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.3);
+    border-bottom: 5px solid #358fef;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.inputRequirements {
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  max-width: 400px;
+  margin: 10px auto;
+  color: rgb(150,150,150);
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+  font-weight: inherit;
+}
+
+input, textarea, select, button, legend, fieldset {
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  color: rgb(40, 40, 40);
+  vertical-align: top;
+  display: block;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Input & Textarea ------------------ */
+
+/* Fields with standard width */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 400px;
+  padding: calc( 40px / 5 );
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  margin: 0 auto 10px;
+}
+
+/* Fields with standard height */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+  -webkit-appearance: none;
+}
+
+/* Buttons, Input Type Submit/Reset ------------------ */
+
+button,
+input[type="button"],
+input[type="submit"] {
+  height: 40px;
+  width: 100%;
+  max-width: 200px;
+  background-color: #358fef;
+  padding: calc( 40px / 5 );
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+/* States ------------------ */
+
+input[disabled], button[disabled] {
+  cursor: not-allowed;
+}
+
+input:focus, button:focus  {
+  background-color: rgb(250,250,250);
+  border-color: #000;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover,
+button:focus, input[type="button"]:focus, input[type="submit"]:focus {
+  color: #fafafa;
+  background-color: #6fadf0;
+}
+
+
+
+.inputRequirements li.invalid {
+    color: #e77c3c;;
+}
+
+.inputRequirements li.valid {
+    color: #76a53e;
+}
+
+.inputRequirements li.valid:after {
+    display: inline-block;
+    padding-left: 10px;
+    content: "\2713";
+}
+
+input:not([type="submit"]):valid {
+  border-color: #79a743;
+}
+
+/* Hide and show related .inputRequirements when interacting with input */
+
+input:not([type="submit"]) + .inputRequirements {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;  
+}
+
+input:not([type="submit"]):hover + .inputRequirements,
+input:not([type="submit"]):focus + .inputRequirements,
+input:not([type="submit"]):active + .inputRequirements {
+  max-height: 1000px; /* any large number (bigger then the .inputRequirements list) */
+  transition: max-height 1s ease-in;
+}
+
+
+
+
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.image {
+  width: 300px;
+  height: 300px;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 10%;
+  z-index: 1;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  /*transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;*/
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.right-panel .image,
+.right-panel .content {
+  transform: translateX(800px);
+}
+
+

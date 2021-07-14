@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+/** global **/
+body {
+  background: #333;
+  margin: 0px auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0em;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin-bottom: 10px;
+  overflow: auto;
+}
+a {
+  text-decoration: none;
+  color: #2a8aad;
+  cursor: pointer;
+}
+a:focus,a:hover{
+  color: #d40f0f;
+}
+label{
+  float: left;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  padding-right: 20px;
+  text-align: center;
+
+
+}
+pre{
+  border-left: 3px solid #2a8aad;
+  padding-left: 15px;
+  margin: 0 0 10px 2px;
+  white-space: pre-wrap;
+}
+code,
+blockquote{
+  display: block;
+  border-left:5px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+blockqoute p {
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  height: 1%;
+}
+
+/** headers **/
+h1,
+h2,
+h3,
+h5,
+h5 {
+  padding: 10px 0;
+  clear: both;
+}
+h1{
+  color: #2a8aad;
+  font-size: 2.4em;
+}
+h2{
+  color: #2a8aad;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+}
+h3 {
+  color: #2a8aad;
+  font-size: 1.6em;
+  text-align: center;
+}
+h5 {
+    font-size: 1.4em;
+    color: #444;
+}
+h5 {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
+/** lists **/
+ul,
+ol{
+  list-style: none;
+}
+ol {
+  counter-reset: li;
+}
+ul li::before{
+  content: "•";
+  padding-right: 5px;
+  color: #2a8aad;
+}
+li::before {
+  content: counter(li);
+  color: #2a8aad;
+  display: inline-block;
+  width: 1em;
+  padding-right: 5px;
+}
+li {
+  counter-increment: li;
+}
+
+/** table **/
+table{
+    width: 100%;
+    text-align: left;
+    
+}
+table,th,td{
+  border: 1px #ccc solid;
+  border-collapse : collapse;
+  text-align: center;
+}
+th,td{
+  border-radius: 2px;
+  padding: 3px 5px;
+  word-wrap: break-word;
+}
+tr:nth-child(even){
+  background: #eee;
+}
+tr:nth-child(odd){
+  background: #fafafa;
+}
+
+/** form inputs **/
+input,
+select,
+textarea{
+  font-family: 'Oxygen', 'sans-serif';
+  padding: 5px;
+  color: #2a8aad;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  width: 100%;
+  /**-webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;**/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: boarder-box;
+}
+input:focus,
+select:focus;
+textarea:focus{
+  outline: none !important;
+  border: 1px solid #2a8aad;
+  border-style: solid;
+  background-color: #f3f7f7;
+}
+textarea{
+  height: 150px;
+}
+input[type=date]:before{
+  content: attr(placeholder);
+  color: #aaa;
+  margin-right : 0.5em;
+}
+input[type=date]:focus:before{
+  content: "";
+}
+input[type=submit]{
+  color: #fff;
+  border: none;
+  background-color: #358fef;
+  border-radius: .25em;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: auto;
+  margin-top: 33px;
+  cursor: pointer;
+  float:left;
+}
+input[type=submit]:hover,
+input[type=submit]:focus{
+  color: #fafafa;
+  background-color: #6fadf0;
+}
+
+/** custom classes **/
+div.container{
+  background: #fff;
+  width: 50%;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: .25em;
+  overflow: auto;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: inline-block;
+    background-color: #358fef;
+    width: 100%;
+    padding: 10px;
+}
+.nav-title{
+    margin-left: 15px;
+    color: #ffffff;
+    float: left;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+.links{
+    float: left;
+    margin-right: 30px;
+    height: 3em;
+}
+#logo-cont{
+    width:175px;
+    height: 175px;
+    overflow: hidden;
+    position: absolute;
+    right:0px;
+    top:-10px;
+}
+#logo-cont > img{
+    width: 100%;
+    height:100%;
+}
+.links > a{
+    margin-right: 10px;
+    color:aliceblue;
+    font-weight: bold;
+    font-family: poppins;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    line-height: 100% ;
+    text-transform: uppercase;
+}
+
+#attendence{
+    position: relative;
+    top: 20%;
+}
