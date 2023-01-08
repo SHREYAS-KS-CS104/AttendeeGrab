@@ -1,4 +1,4 @@
 <div style="text-align: center">
-  # AttendeeGrab
+ AttendeeGrab
 </div>
 An attendance management system built using PHP and Mysql
