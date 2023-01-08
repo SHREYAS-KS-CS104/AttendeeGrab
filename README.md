@@ -9,3 +9,30 @@ Overall, our project aims to streamline the process of managing student attendan
 </p>
 
 - <h2 style = "text-align: center" >ER DIAGRAM</h1>
+
+<p align="center">
+  <img src="./images/ERD.png" alt="Alt text">
+</p>
+
+- <h2 style = "text-align: center" >SCHEMA</h1>
+
+<p align="center">
+  <img src="./images/Schema.png" alt="Alt text">
+</p>
+
+- <h2 style = "text-align: center" >USER INTERFACE DESIGN</h1>
+<div style="text-align: center">
+  <ul>
+    <ul>
+      <li><h3 style = "text-align: center" >Student login page</h1></li>
+      <p align="center">
+        <img src="./images/Student Form.png" alt="Alt text">
+      </p>
+      <li><h3 style = "text-align: center" >Teacher login page</h1></li>
+      <p align="center">
+        <img src="./images/Teacher Form.png" alt="Alt text">
+      </p>
+      <li>Bullet point 3</li>
+    </ul>
+  </ul>
+</div>
