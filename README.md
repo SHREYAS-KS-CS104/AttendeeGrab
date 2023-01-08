@@ -26,11 +26,11 @@ Overall, our project aims to streamline the process of managing student attendan
     <ul>
       <li><h3 style = "text-align: center" >Student login page</h1></li>
       <p align="center">
-        <img src="./images/j.png" alt="Alt text">
+        <img src="./images/Student Form.png" alt="Alt text">
       </p>
       <li><h3 style = "text-align: center" >Teacher login page</h1></li>
       <p align="center">
-        <img src="./images/b.png" alt="Alt text">
+        <img src="./images/Teacher Form.png" alt="Alt text">
       </p>
       <li>Bullet point 3</li>
     </ul>
